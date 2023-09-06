@@ -16,7 +16,7 @@ public class ProdutoTest {
 		
 
 		Categoria categoria = new Categoria();
-		BigDecimal preco = new BigDecimal(0);		
+		BigDecimal preco = new BigDecimal(0.0);		
 		try{
 			//novoProduto = new Produto(nome,descricao,quantidadeEstoque,categoria,preco);
 			novoProduto = new Produto("Xaiomi","Smartphone",10,categoria,preco);
@@ -39,7 +39,7 @@ public class ProdutoTest {
 //		String descricao = "Smartphone";
 //		int quantidadeEstoque = 10;
 		Categoria categoria = new Categoria();
-		BigDecimal preco = new BigDecimal("-10");
+		BigDecimal preco = new BigDecimal("-10.0");
 		
 		try{
 			//novoProduto = new Produto(nome,descricao,quantidadeEstoque,categoria,preco);
@@ -58,7 +58,7 @@ public class ProdutoTest {
 		Produto novoProduto = null;
 		
 		Categoria categoria = new Categoria();
-		BigDecimal preco = new BigDecimal(13);		
+		BigDecimal preco = new BigDecimal(13.3);		
 		try{
 			//novoProduto = new Produto(nome,descricao,quantidadeEstoque,categoria,preco);
 			novoProduto = new Produto("Xaiomi","Smartphone",10,categoria,preco);
