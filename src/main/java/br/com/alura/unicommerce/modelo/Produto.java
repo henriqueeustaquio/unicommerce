@@ -51,26 +51,17 @@ public class Produto {
 		this.categoria = categoria;
 		this.setPreco(preco);
 	}
-
     
     public BigDecimal getPreco() {
 		return preco;
 	}
 
-
-
 	public void setPreco(BigDecimal preco) {
-		//this.preco = preco;
-		System.out.println("====INICIO DOS TESTES JUNIT >>PRECO VALOR: " + preco );	
 		if ( preco.compareTo(preco) == 0.0) {
-		//if ( preco.equals(BigDecimal.ZERO)) {		
-			System.out.println("PRODUTO.JAVA>>>Cond-1____PRECO == 0______________________________ " + preco);
     		throw new IllegalArgumentException("Preco Zerado, Por favor insira um valor maior que ZERO");
     	}else if (preco.compareTo(preco) < 0.0) {
-    		System.out.println("PRODUTO.JAVA>>>Cond-2____PRECO < 0_______________________________ " + preco);
     		throw new IllegalArgumentException("Preço inválido, Por favor insira um valor que não seja NEGATIVO.");
 		} else {
-			System.out.println("PRODUTO.JAVA>>>Cond-3____PRECO < 0______________________________ " + preco);
 			this.preco = preco;
 		}
     }

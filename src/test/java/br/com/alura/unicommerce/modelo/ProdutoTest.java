@@ -13,8 +13,6 @@ public class ProdutoTest {
 	@Test
 	public void TestePrecoProdutoZero() {
 		Produto novoProduto = null;
-		
-
 		Categoria categoria = new Categoria();
 		BigDecimal preco = new BigDecimal(0.0);		
 		try{
@@ -22,14 +20,9 @@ public class ProdutoTest {
 			novoProduto = new Produto("Xaiomi","Smartphone",10,categoria,preco);
 			
 			}catch (Exception e) {
-				System.out.println("Teste_2_Zero>>"+e);
 			}
 		assertEquals(null, novoProduto);
 		}
-	
-		
-	
-	
 		
 	@Test
 	public void TestePrecoProdutoNegativo() {
@@ -44,29 +37,22 @@ public class ProdutoTest {
 		try{
 			//novoProduto = new Produto(nome,descricao,quantidadeEstoque,categoria,preco);
 			novoProduto = new Produto("Xaiomi","Smartphone",10,categoria,preco);
-			
 			}catch (Exception e) {
-				System.out.println("Teste_1_Negativo>>"+e);
 			}
 		assertEquals(null, novoProduto);
 		}
 	
-
-	
 	@Test
 	public void TestePrecoProdutoPositivo() {
 		Produto novoProduto = null;
-		
 		Categoria categoria = new Categoria();
 		BigDecimal preco = new BigDecimal(13.3);		
 		try{
 			//novoProduto = new Produto(nome,descricao,quantidadeEstoque,categoria,preco);
-			novoProduto = new Produto("Xaiomi","Smartphone",10,categoria,preco);
-			
+			novoProduto = new Produto("Xaiomi","Smartphone",10,categoria,preco);		
 			}catch (Exception e) {
-				//System.out.println("Teste_3_Positivo>>"+e);
+				
 			}
-		System.out.println("Teste_3_Valor_Positivo - CORRETO!!!!>> "+preco);
 		assertEquals(null, novoProduto);
 		
 		}
